@@ -730,7 +730,7 @@ section {
 .featured-services .title {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .featured-services .title a {
@@ -738,7 +738,7 @@ section {
 }
 
 .featured-services .description {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 28px;
   margin-bottom: 0;
 }
