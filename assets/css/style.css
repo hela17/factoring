@@ -109,7 +109,8 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #106eea;
+  /* background: #106eea; */
+  background: #0e1d34;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -176,11 +177,13 @@ h6 {
 }
 
 #header .logo a {
-  color: #222222;
+  color: #193155;
+  /* color: #106eea; */
 }
 
 #header .logo a span {
-  color: #106eea;
+  color: #0066ff;
+  /* color: #193155; */
 }
 
 #header .logo img {
@@ -191,6 +194,15 @@ h6 {
   margin-top: 70px;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  
+}
+.subfactoring-nav {
+  margin-left: 10px;
+  margin-top: 6px;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -601,10 +613,15 @@ section {
   color: black;
 }
 
+
 @media (min-width: 1024px) {
   .section-title p {
     width: 50%;
   }
+}
+
+.img-fluid {
+  border-radius: 1%;
 }
 
 /*--------------------------------------------------------------
@@ -742,8 +759,8 @@ section {
 
 .factoring-title h3 {
   
-  text-align: left;
-  padding-bottom: 60px;
+  text-align: center;
+  padding-bottom: 45px;
   margin: 20px 0 0 0;
   font-size: 42px;
   font-weight: 600;
@@ -761,6 +778,18 @@ section {
   color: #444444;
 }
 
+.factoring button {
+  background: #106eea;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.factoring p strong {
+  font-weight: 700px;
+}
 
 /*--------------------------------------------------------------
 # About
@@ -779,6 +808,7 @@ section {
   display: flex;
   align-items: flex-start;
   margin-bottom: 35px;
+  margin-left: 60px;
 }
 
 .about .content ul li:first-child {
@@ -880,7 +910,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  background: url("../img/hero-6.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -946,13 +976,14 @@ section {
   display: inline-block;
   right: -5px;
   position: relative;
-  top: 10px;
+  top: 0px;
 }
 
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
   color: #eee;
+  font-size: 25px;
 }
 
 .testimonials .swiper-pagination {
@@ -1179,6 +1210,12 @@ section {
 
 .contact .php-email-form button[type=submit]:hover {
   background: #3b8af2;
+}
+
+.contact h2 {
+  color: #106eea;
+  margin-bottom: 25px; 
+  font-weight: 700;
 }
 
 @keyframes animate-loading {
