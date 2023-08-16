@@ -616,7 +616,7 @@ section {
 
 @media (min-width: 1024px) {
   .section-title p {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -682,11 +682,15 @@ section {
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
-/* .featured-services .icon-box {
+.featured-services {
+  padding-top: 0px;
+}
+
+.featured-services .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  background: #30A2FF;
+  background: #fff;
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -696,7 +700,7 @@ section {
 .featured-services .icon-box::before {
   content: "";
   position: absolute;
-  background:orange;
+  background: #cbe0fb;
   right: 0;
   left: 0;
   bottom: 0;
@@ -706,7 +710,7 @@ section {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #FFE7A0;
+  background: #106eea;
   top: 0;
   border-radius: 0px;
 }
@@ -715,46 +719,62 @@ section {
   margin-bottom: 15px;
 }
 
-/* color del icono inicial */
-/* .featured-services .icon i {
+.featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #F6F1F1;
+  color: #106eea;
   transition: all 0.3s ease-in-out;
 }
 
 .featured-services .title {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 30px;
-} */
+  font-size: 18px;
+}
 
+.featured-title  {
+  color: #111111;
+  font-size: 18px;
+}
 
-/* Color de letra de ¿Que es el factoring? */
-/* .featured-services .title a {
-  color:#F6F1F1;
-} */
-
-/* .featured-services .description {
-  /* font-size: 20px;
+.featured-services .description {
+  font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
-}  */
+  color: #111111;
+}
 
-/* Color de el texto de la descripcion de ¿que es factoring? cuando pasamos el puntero por arriba */
-.featured-services .icon-box:hover .title a,
+.featured-services .title {
+  color: #106eea;
+}
+.featured-services .icon-box:hover .featured-title,
 .featured-services .icon-box:hover .description {
-  color: #30A2FF;
+  color: #fff;
 }
 
 .featured-services .icon-box:hover .icon i {
   color: #fff;
-} 
-/*--------------------------------------------------------------
+}
+.feature-services h4 p {
+  color: #106eea;
+  text-decoration: none;
+}
+
+/*------------------------------------------------------
 # Factoring
---------------------------------------------------------------*/
+-------------------------------------------------------*/
 .factoring-bg {
   background-color: #ffffff;
+}
+
+.linea-decorativa {
+  border-bottom: 1px solid  #222222;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 .factoring-title h3 {
@@ -790,6 +810,106 @@ section {
 .factoring p strong {
   font-weight: 700px;
 }
+#factoring .btn-get-started {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  /* color: #fff;
+  background: #106eea; */
+  border: 2px solid #005895;
+  color:rgba(9, 9, 9, 0.9);
+  background-color: #fff ;
+  
+}
+
+#factoring .btn-get-started:hover {
+  /* background-color: #106eea95;
+  color: #fff; */
+  border-color: #106eea95;
+  box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+}
+
+
+/*-------------------------------------------------------------- # Ventajas
+--------------------------------------------------------------*/
+.ventajas{
+  background-color: #f6f9fe;
+}
+
+.ventajas .icon-box {
+  text-align: center;
+  border: 1px solid #e2eefd;
+  padding: 80px 10px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+
+.ventajas .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #f1f6fe;
+  border-radius: 4px;
+  border: 1px solid #deebfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+}
+
+.ventajas .icon-box .icon i {
+  color: #3b8af2;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+.ventajas .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #0e1d34;
+
+}
+
+.ventajas .icon-box h4 a {
+  color: #222222;
+  transition: ease-in-out 0.3s;
+}
+
+.ventajas .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #777777;
+  font-weight: 500;
+  margin: 0px 0px 20px;
+}
+
+.ventajas .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+}
+
+.ventajas .icon-box:hover h4 a,
+.ventajas .icon-box:hover .icon i {
+  color: #106eea;
+}
+
+.ventajas .icon-box:hover .icon {
+  border-color: #106eea;
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # About
@@ -1193,6 +1313,7 @@ section {
 
 .contact .php-email-form input {
   padding: 10px 15px;
+ 
 }
 
 .contact .php-email-form textarea {
@@ -1206,11 +1327,14 @@ section {
   color: #fff;
   transition: 0.4s;
   border-radius: 4px;
+
 }
 
 .contact .php-email-form button[type=submit]:hover {
   background: #3b8af2;
 }
+
+
 
 .contact h2 {
   color: #106eea;
