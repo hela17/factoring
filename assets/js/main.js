@@ -287,3 +287,43 @@
   new PureCounter();
 
 })()
+
+/**
+ * Formulario selector y sale monto
+ */
+document.addEventListener("DOMContentLoaded", function () {
+  const opcionSelect = document.getElementById("opcion");
+  const montoInput = document.getElementById("monto");
+
+  opcionSelect.addEventListener("change", function () {
+    if (opcionSelect.value === "Factoring") {
+      montoInput.removeAttribute("disabled");
+      montoInput.placeholder = "Ingrese el monto en Usd";
+    } else {
+      montoInput.setAttribute("disabled", "disabled");
+      montoInput.value = ""; // Limpiar el valor si está deshabilitado
+      montoInput.placeholder = "Monto";
+    }
+  });
+
+  montoInput.addEventListener("input", function () {
+    if (opcionSelect.value === "Factoring") {
+      formatCurrencyInput(montoInput);
+    }
+  });
+
+  montoInput.addEventListener("blur", function () {
+    if (opcionSelect.value === "Factoring") {
+      formatCurrencyInput(montoInput);
+    }
+  });
+
+});
+
+
+
+
+
+
+
+

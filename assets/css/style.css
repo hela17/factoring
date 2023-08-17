@@ -593,7 +593,7 @@ section {
 }
 
 .section-title h3 {
-  margin: 15px 0 0 0;
+  margin: 15px 0 15px 0;
   font-size: 32px;
   font-weight: 700;
   color: black;
@@ -710,7 +710,7 @@ section {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #106eea;
+  background: #002c54;
   top: 0;
   border-radius: 0px;
 }
@@ -767,7 +767,7 @@ section {
   background-color: #ffffff;
 }
 
-.linea-decorativa {
+/* .linea-decorativa {
   border-bottom: 1px solid  #222222;
   padding-bottom: 10px;
   margin-bottom: 0px;
@@ -775,9 +775,9 @@ section {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-}
+} */
 
-.factoring-title h3 {
+/* .factoring-title h3 {
   
   text-align: center;
   padding-bottom: 45px;
@@ -788,17 +788,39 @@ section {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0px;
   text-transform: uppercase;
+} */
+
+.factoring-title h3 {
+  text-align: center;
+  margin-top: 65px;
+  font-size: 35px;
+  font-weight: 600;
+  color: #005895; 
+  
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
 }
 
 .factoring-texto {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  margin-top: 0;
-  padding-top: 100;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin-top: 25px;
+  /* padding-top: 10px; */
   color: #444444;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
-.factoring button {
+.factoring-texto p span {
+  /* color: #005895; */
+  font-weight: bold;
+}
+
+.factoring-texto p {
+  margin-bottom: 20px;
+}
+
+/* .factoring button {
   background: #106eea;
   border: 0;
   padding: 10px 30px;
@@ -806,10 +828,10 @@ section {
   transition: 0.4s;
   border-radius: 4px;
   margin-top: 20px;
-}
-.factoring p strong {
+} */
+/* #factoring p strong {
   font-weight: 700px;
-}
+} */
 #factoring .btn-get-started {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -828,6 +850,11 @@ section {
   
 }
 
+#factoring .btn-get-started {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 #factoring .btn-get-started:hover {
   /* background-color: #106eea95;
   color: #fff; */
@@ -835,12 +862,32 @@ section {
   box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
 }
 
+#factoring .btn-get-started {
+  background-color: #ffffff; /* Cambia el color de fondo a tu preferencia */
+  color: #002c54; /* Cambia el color del texto a tu preferencia */
+  padding: 10px 20px; /* Ajusta el espaciado interno del botón */
+  border: 1px solid #002c54;
+  border-radius: 5px; /* Agrega esquinas redondeadas al botón */
+  font-size: 18px; /* Ajusta el tamaño de fuente */
+  text-transform: uppercase;
+  text-decoration: none; /* Elimina la subrayado del enlace si se aplica */
+  transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave */
+}
 
-/*-------------------------------------------------------------- # Ventajas
+#factoring .btn-get-started:hover {
+  background-color: #002c54; /* Cambia el color de fondo al pasar el cursor */
+  color: #fff; /* Cambia el color del texto al pasar el cursor */
+}
+
+
+/*-------------------------------------------------------------- 
+# Ventajas
 --------------------------------------------------------------*/
 .ventajas{
   background-color: #f6f9fe;
 }
+
+
 
 .ventajas .icon-box {
   text-align: center;
@@ -956,6 +1003,11 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.about img {
+  margin-top: 50px;
+  margin-left: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1235,14 +1287,14 @@ section {
   border: 2px dotted #b3d1fa;
 }
 
-.contact .info-box h3 {
+.contact .info-box h3  {
   font-size: 20px;
   color: #777777;
   font-weight: 700;
   margin: 10px 0;
 }
 
-.contact .info-box p {
+.contact .info-box p  {
   padding: 0;
   line-height: 24px;
   font-size: 14px;
@@ -1300,6 +1352,7 @@ section {
 }
 
 .contact .php-email-form input,
+.contact .php-email-form select,
 .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
@@ -1307,13 +1360,14 @@ section {
 }
 
 .contact .php-email-form input:focus,
+.contact .php-email-form select:focus,
 .contact .php-email-form textarea:focus {
   border-color: #106eea;
 }
 
-.contact .php-email-form input {
+.contact .php-email-form input,
+.contact .php-email-form select {
   padding: 10px 15px;
- 
 }
 
 .contact .php-email-form textarea {
